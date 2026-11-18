@@ -4,4 +4,6 @@ Contrôle public de disponibilité : toutes les 5 minutes, ce dépôt teste les 
 
 **Sites contrôlés** : bimtheon.com, id.bimtheon.com, grana.bimtheon.com, ardha.bimtheon.com, rhyzom.bimtheon.com, anther.bimtheon.com.
 
+**Base contrôlée** : bimtheon-core, par sa page de santé publique (`/functions/v1/sante`). Elle ne répond que « ok » ou « ko » : aucune tâche planifiée ni aucun appel sortant en erreur depuis 30 minutes. Le détail d'un « ko » ne se lit que dans les journaux de la base.
+
 Ce dépôt est public, car les minutes de GitHub Actions y sont gratuites. Il ne contient **aucun secret** et ne vise **aucune adresse interne**. Il n'expose que des adresses déjà publiques et l'historique des contrôles.
